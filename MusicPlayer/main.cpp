@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
             break;
         }
     }
-    qDebug() << "hapi aopeng" << endl;
+    qDebug() << "hapi aopeng";
     MainWindow w;
     w.show();
     return a.exec();
