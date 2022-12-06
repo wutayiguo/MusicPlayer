@@ -1,7 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include <QFileDialog>
+#include <QMediaPlayer>
 #include <QMainWindow>
+#include <QMediaPlaylist>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,7 +17,16 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_pushButton_select_clicked();
+
+    void on_pushButton_play_clicked();
+
+    void on_pushButton_pause_clicked();
+
 private:
     Ui::MainWindow *ui;
+    QMediaPlayer *player;
+    QMediaPlaylist *playlist;
 };
 #endif // MAINWINDOW_H
