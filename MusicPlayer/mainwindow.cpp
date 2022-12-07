@@ -22,7 +22,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_select_clicked()
 {
     QString fileName = QFileDialog::getOpenFileName(this,"select",".","music(*.mp3 *.wav)");
-    qDebug()<<fileName;
+    qDebug()<<"E:/音乐/音乐/Adele - Rolling In The Deep.mp3";
     playlist->addMedia(QUrl::fromLocalFile(fileName));
     player->setPlaylist(playlist);
 }
@@ -35,4 +35,14 @@ void MainWindow::on_pushButton_play_clicked()
 void MainWindow::on_pushButton_pause_clicked()
 {
     player->pause();
+}
+
+void MainWindow::on_pushButton_test_clicked()
+{
+    QStringList fileNames = QFileDialog::getOpenFileNames(this,"select",".","music(*.mp3 *.wav)");
+    for(int i=0;i<fileNames.count();i++)
+    {
+        auto item=new QListWidgetItem(fileNames[i]);
+        ui->listWidget_musicList->addItem(item);
+    }
 }

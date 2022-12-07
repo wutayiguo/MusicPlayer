@@ -20,6 +20,7 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    MusicInfo.h \
     mainwindow.h
 
 FORMS += \

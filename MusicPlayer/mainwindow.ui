@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>990</width>
+    <height>742</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QToolButton" name="tbOpen">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>470</y>
+      <x>290</x>
+      <y>580</y>
       <width>81</width>
       <height>61</height>
      </rect>
@@ -30,8 +30,8 @@
    <widget class="QToolButton" name="tbPlay">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>470</y>
+      <x>220</x>
+      <y>580</y>
       <width>60</width>
       <height>69</height>
      </rect>
@@ -67,8 +67,8 @@
    <widget class="QLabel" name="labPlayDurat">
     <property name="geometry">
      <rect>
-      <x>112</x>
-      <y>95</y>
+      <x>442</x>
+      <y>525</y>
       <width>30</width>
       <height>47</height>
      </rect>
@@ -80,8 +80,8 @@
    <widget class="QSlider" name="slider">
     <property name="geometry">
      <rect>
-      <x>148</x>
-      <y>107</y>
+      <x>478</x>
+      <y>537</y>
       <width>309</width>
       <height>22</height>
      </rect>
@@ -93,8 +93,8 @@
    <widget class="QLabel" name="labMusicInfo">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>60</y>
+      <x>490</x>
+      <y>490</y>
       <width>383</width>
       <height>12</height>
      </rect>
@@ -115,8 +115,8 @@
    <widget class="QPushButton" name="pushButton_select">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>150</y>
+      <x>400</x>
+      <y>580</y>
       <width>121</width>
       <height>71</height>
      </rect>
@@ -128,8 +128,8 @@
    <widget class="QPushButton" name="pushButton_play">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>150</y>
+      <x>550</x>
+      <y>580</y>
       <width>131</width>
       <height>81</height>
      </rect>
@@ -141,8 +141,8 @@
    <widget class="QPushButton" name="pushButton_pause">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>160</y>
+      <x>700</x>
+      <y>590</y>
       <width>151</width>
       <height>71</height>
      </rect>
@@ -151,13 +151,36 @@
      <string>暂停</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_test">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>340</y>
+      <width>111</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_musicList">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>171</width>
+      <height>671</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>990</width>
      <height>22</height>
     </rect>
    </property>

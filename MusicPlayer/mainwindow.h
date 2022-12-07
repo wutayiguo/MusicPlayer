@@ -4,7 +4,7 @@
 #include <QMediaPlayer>
 #include <QMainWindow>
 #include <QMediaPlaylist>
-
+#include "MusicInfo.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -23,6 +23,8 @@ private slots:
     void on_pushButton_play_clicked();
 
     void on_pushButton_pause_clicked();
+
+    void on_pushButton_test_clicked();
 
 private:
     Ui::MainWindow *ui;
