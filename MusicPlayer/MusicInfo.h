@@ -31,14 +31,13 @@ public:
         QStringList strlistNameAndSinger = getMusicNameAndSinger(localFilePath).split('-');
         this->name =strlistNameAndSinger[0];
         this->singer = strlistNameAndSinger[1];
-
-//        for(auto x:strlist)
-//        {
-//            qDebug()<<x;
-//        }
     }
     MusicInfo(){}
 
+    void read()
+    {
+
+    }
     int timesTransition(QString str)
     {
         QStringList strlist= str.split(':');

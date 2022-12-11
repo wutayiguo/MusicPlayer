@@ -1,0 +1,2 @@
+nums:0|times:03:25|count:0|local:E:/音乐/音乐/作曲家-李荣浩.wav
+nums:1|times:03:24|count:0|local:E:/音乐/音乐/青花瓷-周杰伦.mp3
