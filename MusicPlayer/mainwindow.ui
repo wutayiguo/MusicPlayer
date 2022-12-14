@@ -17,8 +17,8 @@
    <widget class="QToolButton" name="tbOpen">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>580</y>
+      <x>300</x>
+      <y>220</y>
       <width>81</width>
       <height>61</height>
      </rect>
@@ -30,10 +30,10 @@
    <widget class="QToolButton" name="tbPlay">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>240</x>
       <y>580</y>
-      <width>60</width>
-      <height>69</height>
+      <width>91</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -64,59 +64,11 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="labPlayDurat">
-    <property name="geometry">
-     <rect>
-      <x>442</x>
-      <y>525</y>
-      <width>30</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>00:00</string>
-    </property>
-   </widget>
-   <widget class="QSlider" name="slider">
-    <property name="geometry">
-     <rect>
-      <x>478</x>
-      <y>537</y>
-      <width>309</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QLabel" name="labMusicInfo">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>490</y>
-      <width>383</width>
-      <height>12</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="text">
-     <string>Music Info</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton_select">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>580</y>
+      <x>410</x>
+      <y>220</y>
       <width>121</width>
       <height>71</height>
      </rect>
@@ -128,8 +80,8 @@
    <widget class="QPushButton" name="pushButton_play">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>580</y>
+      <x>560</x>
+      <y>220</y>
       <width>131</width>
       <height>81</height>
      </rect>
@@ -141,8 +93,8 @@
    <widget class="QPushButton" name="pushButton_pause">
     <property name="geometry">
      <rect>
-      <x>700</x>
-      <y>590</y>
+      <x>710</x>
+      <y>230</y>
       <width>151</width>
       <height>71</height>
      </rect>
@@ -173,6 +125,65 @@
       <height>671</height>
      </rect>
     </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>560</y>
+      <width>441</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="labMusicInfo">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Music Info</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="labPlayCurrentDurat">
+         <property name="text">
+          <string>00:00</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="slider">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labPlayDurat">
+         <property name="text">
+          <string>00:00</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

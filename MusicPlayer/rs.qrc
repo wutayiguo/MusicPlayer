@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>images/back2.jpg</file>
+        <file>images/background_white.jpg</file>
+        <file>images/content.png</file>
+        <file>images/icon.png</file>
+        <file>images/maxvolume.png</file>
+        <file>images/minvolume.png</file>
+        <file>images/next.png</file>
+        <file>images/openf.png</file>
+        <file>images/order.png</file>
+        <file>images/pause.png</file>
+        <file>images/play.png</file>
+        <file>images/prev.png</file>
+        <file>images/random.png</file>
+        <file>images/single.png</file>
+        <file>images/skin.png</file>
+    </qresource>
+</RCC>

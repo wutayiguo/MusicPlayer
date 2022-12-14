@@ -39,6 +39,8 @@ private slots:
     void on_listWidget_musicList_customContextMenuRequested(const QPoint &pos);
     void listWidget_Action_Add();
 
+    void on_tbPlay_toggled(bool checked);
+
 private:
     Ui::MainWindow *ui;
     QMenu *listWidget_menu;

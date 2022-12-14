@@ -42,8 +42,7 @@ void MainWindow::on_pushButton_test_clicked()
         auto item=new QListWidgetItem(fileNames[i]);
         ui->listWidget_musicList->addItem(item);
     }
-    QString s= "nums:0|times:03:25|count:0|local:E:/音乐/音乐/作曲家-李荣浩.wav";
-    MusicInfo *musicInfo = new MusicInfo(s);
+
 }
 
 void MainWindow::readMusicInfo_File()
@@ -108,4 +107,13 @@ void MainWindow::listWidget_Action_Add()
         systemInfo->add(str);
     }
     query();
+}
+
+void MainWindow::on_tbPlay_toggled(bool checked)
+{
+    if(checked){
+        ui->tbPlay->setIcon(QIcon(":/new/prefix1/images/pause.png"));
+        player->play();}
+    else{ui->tbPlay->setIcon(QIcon(":/new/prefix1/images/play.png"));
+        player->pause();}
 }
