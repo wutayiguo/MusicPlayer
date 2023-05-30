@@ -18,12 +18,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     SystemInfo.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    playerstate.cpp
 
 HEADERS += \
     MusicInfo.h \
     SystemInfo.h \
-    mainwindow.h
+    mainwindow.h \
+    playerstate.h
 
 FORMS += \
     mainwindow.ui

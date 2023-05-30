@@ -5,7 +5,6 @@
 #include <QFileDialog>
 #include <QDebug>
 
-
 void SystemInfo::readFileInfo()
 {
     bool exist = QFile::exists(listInfoPath);
@@ -57,6 +56,8 @@ void SystemInfo::add(QString str)
     musicVector.push_back(*musicInfo);
 
     QFile file(listInfoPath);
+    QFileInfo fileinfo(listInfoPath);
+
     if(file.open(QIODevice::ReadWrite))
     {
         QByteArray array= file.readAll();

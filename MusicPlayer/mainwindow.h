@@ -7,6 +7,7 @@
 #include <QListWidget>
 #include "MusicInfo.h"
 #include "SystemInfo.h"
+#include "playerstate.h"
 
 #include <QMenu>
 #include <QAction>
@@ -23,6 +24,8 @@ public:
     void listWidgetInit();
     void playerInit();
     void query();
+    void play();
+    void pause();
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
@@ -31,7 +34,6 @@ private slots:
 
     void on_pushButton_play_clicked();
 
-    void on_pushButton_pause_clicked();
 
     void on_pushButton_test_clicked();
 
@@ -39,9 +41,18 @@ private slots:
     void on_listWidget_musicList_customContextMenuRequested(const QPoint &pos);
     void listWidget_Action_Add();
 
-    void on_tbPlay_toggled(bool checked);
+    void on_volumeSlider_valueChanged(int value);
 
+    void on_slider_sliderPressed();
+
+    void on_slider_sliderReleased();
+
+    void onPositionChanged(qint64);
+    void onDurationChanged(qint64);
 private:
+    PlayerState *state = new PlayerState();
+    QString durationTime;
+    QString positionTime;
     Ui::MainWindow *ui;
     QMenu *listWidget_menu;
     QMediaPlayer *player;
