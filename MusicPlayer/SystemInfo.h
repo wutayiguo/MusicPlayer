@@ -13,10 +13,12 @@ public:
     {
         listInfoPath = QDir::currentPath() +"/listInfo.txt";
         readFileInfo();
+        currentPlayingOrder = 0;                                            //默认第一首
     }
     void readFileInfo();
     void add(QString);
     QVector<MusicInfo>musicVector;
+    int currentPlayingOrder;
 };
 
 #endif // SYSTEMINFO_H

@@ -26,33 +26,27 @@ public:
     void query();
     void play();
     void pause();
+    void nextMusic();
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
     void on_pushButton_select_clicked();
-
     void on_pushButton_play_clicked();
-
-
     void on_pushButton_test_clicked();
-
-    void on_listWidget_musicList_itemClicked(QListWidgetItem *item);
     void on_listWidget_musicList_customContextMenuRequested(const QPoint &pos);
     void listWidget_Action_Add();
-
     void on_volumeSlider_valueChanged(int value);
-
-    void on_slider_sliderPressed();
-
     void on_slider_sliderReleased();
-
     void onPositionChanged(qint64);
     void onDurationChanged(qint64);
+
+    void on_listWidget_musicList_doubleClicked(const QModelIndex &index);
+
 private:
     PlayerState *state = new PlayerState();
     QString durationTime;
-    QString positionTime;
+    QString CurrentDurationTime;
     Ui::MainWindow *ui;
     QMenu *listWidget_menu;
     QMediaPlayer *player;
